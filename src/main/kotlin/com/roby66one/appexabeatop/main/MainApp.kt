@@ -82,11 +82,11 @@ object  MainApp  {
         log.info("ESTRAGGO I DATI DA SMILE")
         val anoomesePods = checkTis.findAll().groupBy { (it.anno_rif ?: 0) * 100 + (it.mese_rif ?: 0)  }.map{(k,v) -> k to v.map{ it.pod}}
 
-        log.info("AINIZIO A ESTRARRE E A SALVARE I DATI DA EXA")
+        log.info("INIZIO A ESTRARRE E A SALVARE I DATI DA EXA")
 
         anoomesePods.forEach { (ym,pods) ->
             val energyExa = ConsEnergyDao(DAOJDBI.jdbiPhoenix() )
-            log.info("ESTRAGGO DA EXA")
+            log.info("ESTRAGGO DA EXA $ym")
             energyExa. findByPodAndMagnitudeGruopPods(pods ,ym.toString(),"A1").forEach { consDO ->
                 val cosEBO = consDO.mapperToConsEnergyBO()
                 val energiaTot = cosEBO.`val`?.filter { it.slotId == "TOT" }
@@ -96,6 +96,7 @@ object  MainApp  {
                 insTis.insertEnergiaPod(ym,giorno,cosEBO.pod,energia)
 
             }
+            log.info("TERMINATO DA EXA $ym")
         }
         log.info("TERMINATO")
         /*
