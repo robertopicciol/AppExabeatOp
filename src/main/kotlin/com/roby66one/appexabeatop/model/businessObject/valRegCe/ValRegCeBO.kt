@@ -1,0 +1,52 @@
+package com.roby66one.appexabeatop.model.businessObject.valRegCe
+
+import java.time.LocalDateTime
+
+data class ValRegCeBO(
+        val giorno_lettura : Long,
+        val giorno_acq_reg : Long,
+        val ora_acq_reg : Long,
+        val codice : String,
+        val matricola : String,
+        val id_punto_misura : Long,
+        val eneltel : String,
+        val code_provenienza : String?,
+        val id_motivo_lettura : Long?,
+        val dt_rettifica : Double?,
+        val dt_esportazione : Double?,
+        val code_cs2 : String?,
+        val code_cs3 : String?,
+        val code_cs4 : String?,
+        val code_cs5 : String?,
+        val lettura_validata : Long?,
+        val id_periodo_rif : Long?,
+        val et1 : Double?,
+        val et2 : Double?,
+        val et3 : Double?,
+        val et4 : Double?,
+        val rt1 : Double?,
+        val rt2 : Double?,
+        val rt3 : Double?,
+        val rt4 : Double?,
+        val wt1 : Double?,
+        val wt2 : Double?,
+        val wt3 : Double?,
+        val wt4 : Double?,
+        val psn : Long?,
+        val pse : Long?,
+        val vpp : Long?,
+        val ntvd : Long?,
+        val cod_let : String?,
+        val data_lettura : LocalDateTime?,
+        val tsen : Long?,
+        val disi : Long?,
+        val idlotto : Long?,
+        val stato_elab : String?,
+        val dt_fine_val : LocalDateTime?,
+        val aut_mod : String?,
+        val aut_crea : String?,
+        val dt_inizio_val : LocalDateTime?,
+        val dt_mod : LocalDateTime?
+){
+
+}

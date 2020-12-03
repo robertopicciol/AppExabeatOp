@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>save to properties file</comment>
+    <entry key="db.smile">emts.db.enel</entry>
+    <entry key="db.smileSID">EMTS</entry>
+    <entry key="db.smilepasswd">dpqc1p1#8</entry>
+    <entry key="db.smileuser">APPLPRIO</entry>
+    <entry key="db.tableSmileIn">Dem.letture_reali_punti_ko_cons</entry>
+    <entry key="db.tableSmileOut">DEM.LETT_REALI_KOTIS_DAEXA_RR</entry>
+    <entry key="db.exabeat">elaawiexba3x</entry>
+    <entry key="db.exapasswd">exabeat_backend</entry>
+    <entry key="db.exauser">exabeat_backend</entry>
+    <entry key="db.mod">30</entry>
+</properties>
