@@ -13,7 +13,7 @@ import org.jdbi.v3.sqlobject.statement.UseRowMapper
 
 interface ICheckGiriTisJdbi {
     companion object{
-        const val TABLE = "DEM.CHECK_GIRI_TIS_20201203"
+        const val TABLE = "DEM.CHECK_GIRI_TIS_20201220"
     }
 
     @SqlQuery("select * " +

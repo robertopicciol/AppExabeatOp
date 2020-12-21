@@ -13,7 +13,7 @@ import org.jdbi.v3.sqlobject.statement.SqlUpdate
 
 interface ICheckGiriTisRRExaJdbi {
     companion object{
-        const val TABLE = "DEM.CHECK_GIRI_TIS_RR_EXA_03"
+        const val TABLE = "DEM.CHECK_GIRI_TIS_RR_EXA_04"
     }
 
     @SqlQuery("select * " +
